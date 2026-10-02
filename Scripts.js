@@ -34,7 +34,7 @@ function checkAnswer(){
 		}
 		
 	document.getElementById("score").innerHTML = score;
-	document.getElementById("answer".value = "";
+	document.getElementById("answer").value = "";
 	
 	generateQuestion();
 	
