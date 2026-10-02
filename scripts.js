@@ -1,6 +1,6 @@
 let n1, n2, op, cAns;
 let score = 0;
-const operators ={"+", "-", "*"];
+const operators =["+", "-", "*"];
 
 function generateQuestion(){
 	n1 = Math.floor(Math.random() * 11);
@@ -10,12 +10,12 @@ function generateQuestion(){
 	if(op =="+"){
 		cAns = n1+n2;
 		}
-		elseif(op == "-"{
+		else if(op == "-"){
 			cAns = n1-n2;
 		}
 		else{
 			cAns = n1*n2;
-			}
+		}
 			
 	document.getElementById("question").innerHTML =n1 + " " + op + " " +n2;
 }
@@ -43,7 +43,7 @@ function checkAnswer(){
 	document.getElementById("div-success").style.display ="block";
 	}
 }
-
+	
 function playAgain(){
 	score = 0;
 	document.getElementById("score").innerHTML=score;
